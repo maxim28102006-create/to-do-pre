@@ -10,15 +10,17 @@
     <main class="main">
       <section class="to-do">
         <h1 class="to-do__title">Список дел</h1>
-        <form class="to-do__form">
+        <form class="to-do__form" id="todo-form">
           <input
             class="to-do__input"
             name="task"
+            id="task-input"
             placeholder="Следующее дело..."
+            required
           />
-          <button class="to-do__submit">Добавить</button>
+          <button class="to-do__submit" type="submit">Добавить</button>
         </form>
-        <ul class="to-do__list"></ul>
+        <ul class="to-do__list" id="todo-list"></ul>
       </section>
     </main>
 
